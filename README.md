@@ -54,7 +54,7 @@ like writing multiples of 4 and appending it to a string.
 multiples of 4 = 4 ,8 ,12 ,16 ,20, 24, 28 ...
 now appending them to a string be like:  "481216202428" and now adding each number to corresponding character in the original text.
 
-original text   :    H  e  l  l  0     W  o  r  l  d  !
+original text   :    H  e  l  l  0     W  o  r  l  d  !    
 	   key :     4  8  1  2  1  6  2  0  2  4  2  8
 
 adding ASCII(original text) + key , we get encrypted text                 
