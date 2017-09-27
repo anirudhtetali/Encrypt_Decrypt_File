@@ -1,12 +1,10 @@
 # Encrypt_Decrypt_File
 
-Coding challenge:
-
 Ready-to-execute program that can accomplish the following tasks:
   1. Randomized Cypher program, that can encrypt any text file and will output the encrypted text-file along with a cypher reference number.
   2. Reversing previous program's operation, taking the encrypted text-file along with cypher reference number to output the original text-file.
 
-I developer 2 programs: encrypt.cpp and decrypt.cpp
+I developed 2 programs: encrypt.cpp and decrypt.cpp
   encrypt.cpp will take original-text-file and output_file as command-line arguments. this porgram will ecrypt the contents of original-text-file and put them in output_file. This program will encrypt the data of original file by generating a cypher reference number. It is similar to synchronous key. 
   decrypt.cpp will take the output of encrypt.cpp and returns the original-file contents. The input of decrypt.cpp are 3 command-line arguments
   1. output file of encrypt.cpp that is the encrypted_text_file
