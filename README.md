@@ -42,9 +42,9 @@ This application also works with recursively encrypting and decrypting.
 
 encrypt(encrypt(encrypt(original text))) = decrypt(deecrypt(decrypt(encrypted text )))
 
-I have some other ideas to implement this encryption. I spent significant amount of time researching about standard encryption algorithms, what type of keys they take and encrypt text, etc. In the beginning, I  couldnt find any algorithm that can take a single number as key and return the text which will use the same value to decypt. 
+I have some other ideas to implement this simple encryption. I spent significant amount of time researching about standard encryption algorithms, what type of keys they take and encrypt text, etc. In the beginning, I  couldnt find any algorithm that can take a single number as key and return the text which will use the same value to decypt. 
 
-Then I tried to implement my own simple encryption-decrytion application following the requirements you specified in the email. This application is far more vulnerable if the length of text is big. because as it is similar to substitution cypher, it is easily predictable to see repeated encrypted symbols and assigning them to 'e' (based on the historical data, 'e' is the most used character in sentences).  I also took care of not to get 32 as cypher reference number because, if my text has many capital alphabet, then they will just be converting into small alphabet after encrytion. 
+Then I tried to implement my own simple encryption-decrytion application. This application is far more vulnerable if the length of text is big. because as it is similar to substitution cypher, it is easily predictable to see repeated encrypted symbols and assigning them to 'e' (based on the historical data, 'e' is the most used character in sentences).  I also took care of not to get 32 as cypher reference number because, if my text has many capital alphabet, then they will just be converting into small alphabet after encrytion. 
 
 One another idea I have is to generate cypher reference number and then increase its length to the size of the text to be encrypted. 
 example:  if my original text is "Hello World!" and my generated cypher reference number is 4
@@ -54,8 +54,8 @@ like writing multiples of 4 and appending it to a string.
 multiples of 4 = 4 ,8 ,12 ,16 ,20, 24, 28 ...
 now appending them to a string be like:  "481216202428" and now adding each number to corresponding character in the original text.
 
-original text   :    H  e  l  l  0     W  o  r  l  d  !    
-	   key :     4  8  1  2  1  6  2  0  2  4  2  8
+original text   :    H  e  l  l  0     W  o  r  l  d  !   
+key :                4  8  1  2  1  6  2  0  2  4  2  8
 
 adding ASCII(original text) + key , we get encrypted text                 
 
